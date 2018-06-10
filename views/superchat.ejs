@@ -12,6 +12,7 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
 	<script>
+		var date= new Date();
 		var socket = io.connect();
 		var username=prompt('Veuillez entrer votre pseudo');
 		var message=document.getElementById('messag');
@@ -22,7 +23,7 @@
 		});
 
 		socket.on('msg',function(data){
-			document.getElementById('chat').innerHTML+="<p>"+ data.username + ": " +data.message+"</p>"+"<br/>"
+			document.getElementById('chat').innerHTML+="<p>"+ data.username +"["+date.getHours()+":"+date.getMinutes()+"]"+ ": " +data.message+"</p>"+"<br/>"
 		})
 	</script>
 </body>
