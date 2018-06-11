@@ -10,7 +10,7 @@ app.get('/',function(req,res){
 	res.render('superchat')
 });
 
-server=app.listen(2727);
+server=app.listen(process.env.PORT || 8080);
 
 var io=require('socket.io')(server);
 

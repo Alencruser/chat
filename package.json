@@ -1,0 +1,23 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Pour cela, jetez un oeil à Express et Socket.io. En plus de chaque message, afficher le nom de l'utilisateur connecté ainsi que l'heure à laquelle le message a été ajouté. Hébergez votre site sur Heroku pour pouvoir le tester plus facilement. Bonus",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alencruser/chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alencruser/chat/issues"
+  },
+  "homepage": "https://github.com/Alencruser/chat#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
